@@ -11,7 +11,7 @@ from requets_url import send_mail
 current_directory = os.path.dirname(os.path.abspath(__file__))
 root_path = os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
 sys.path.append(root_path)
-
+print(root_path)
 now = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(time.time()))
 report_path = ("..\\report")
 # 2、html报告文件路径
