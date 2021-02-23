@@ -1,7 +1,7 @@
-from requets_url import get_token
-from requets_url import handlerequests
-from requets_url import logutil2
-from requets_url import read_excel
+#from requets_url import get_token
+#from requets_url import handlerequests
+#from requets_url import logutil2
+#from requets_url import read_excel
 import json
 import unittest
 import os,time
