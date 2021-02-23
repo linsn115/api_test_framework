@@ -1,13 +1,16 @@
-#from requets_url import get_token
-#from requets_url import handlerequests
-#from requets_url import logutil2
-#from requets_url import read_excel
+from requets_url import get_token
+from requets_url import handlerequests
+from requets_url import logutil2
+from requets_url import read_excel
 import json
 import unittest
-import os,time
+import os,time,sys
 from HTMLTestRunner import HTMLTestRunner
 from requets_url import send_mail
 
+current_directory = os.path.dirname(os.path.abspath(__file__))
+root_path = os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
+sys.path.append(root_path)
 
 now = time.strftime('%Y-%m-%d_%H-%M-%S', time.localtime(time.time()))
 report_path = ("..\\report")
