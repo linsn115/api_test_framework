@@ -9,7 +9,7 @@ import unittest
 import os,time,sys
 from HTMLTestRunner import HTMLTestRunner
 from requets_url import send_mail
-
+sys.path.append(os.pardir)
 current_directory = os.path.dirname(os.path.abspath(__file__))
 root_path = os.path.abspath(os.path.dirname(current_directory) + os.path.sep + ".")
 sys.path.append(root_path)
