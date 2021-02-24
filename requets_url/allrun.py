@@ -1,3 +1,5 @@
+import sys
+sys.path.append(r'../')
 from requets_url import get_token
 from requets_url import handlerequests
 from requets_url import logutil2
