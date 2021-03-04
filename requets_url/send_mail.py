@@ -20,7 +20,7 @@ class SendMail():
     def new_report(self, testreport):
         lists = os.listdir(testreport)
         lists.sort(key=lambda fn: os.path.getmtime(testreport + '\\' + fn))  # 获取一个文件中的最近访问时间的文件
-        file_new = os.path.join(testreport, lists[0])
+        file_new = os.path.join(testreport, lists[-1])
         print("==========获取最近时间生成的报告文件路径===========>" + file_new)
         return file_new
 
